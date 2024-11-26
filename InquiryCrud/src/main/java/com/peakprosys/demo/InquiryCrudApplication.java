@@ -8,6 +8,7 @@ public class InquiryCrudApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(InquiryCrudApplication.class, args);
+		System.out.println("Welcome to peakProsys");
 	}
 
 }
