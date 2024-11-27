@@ -9,9 +9,11 @@ import { Observable } from 'rxjs';
 export class UserService {
 
   constructor(private httpClient:HttpClient) { }
-private baseUrl="http://localhost:8084/version1"
+private baseUrl="http://localhost:8084/version1/"
 
   createUser(userin:User):Observable<User>{
-    return this.httpClient.post<User>(`${this.baseUrl}`+'/insert',userin)
+    return this.httpClient.post<User>(`${this.baseUrl}`+'insert',userin)
    }
+
+   
 }

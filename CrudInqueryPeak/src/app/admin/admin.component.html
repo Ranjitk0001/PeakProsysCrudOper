@@ -1,0 +1,25 @@
+<p>admin works!</p>
+<table class="table table-striped">
+    <thead class="table-header">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Massage</th>
+        <th>City</th>
+    </tr>
+</thead>
+<tbody>
+<tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.user}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.mobile}}</td>
+    <td>{{user.msg}}</td>
+    <td>{{user.city}}</td>
+   
+</tr>
+
+</tbody>
+</table>
