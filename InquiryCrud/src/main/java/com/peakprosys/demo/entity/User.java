@@ -31,4 +31,7 @@ public class User {
 	
 	@Column(name="Message")
 	private String msg;
+	
+	@Column(name="city")
+	private String city;
 }
