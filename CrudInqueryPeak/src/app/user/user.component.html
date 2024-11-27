@@ -1,1 +1,28 @@
 <p>user works!</p>
+<div class="container">
+    <h2 class="text-center">Add New Patient</h2>
+    <form (ngSubmit)="onSubmit()">
+     <div class="form-group">
+       <label for="">User</label>
+       <input type="text"  class="form-control" id="user" name="user" placeholder="Enter the user" [(ngModel)]="user.user">
+     </div>
+     
+     <div class="form-group">
+       <label for="">Email</label>
+       <input type="text"  class="form-control"id="email" name="email" placeholder="Enter the Age" [(ngModel)]="user.email">
+     </div>
+ 
+     <div class="form-group">
+       <label for="">Mobile</label>
+       <input type="text"  class="form-control" id="mobile" name="mobile" placeholder="Enter the mobile" [(ngModel)]="user.mobile">
+     </div>
+     
+     <div class="form-group">
+       <label for="">Massage</label>
+       <input type="text"  class="form-control" id="msg" name="msg" placeholder="Enter the msg" [(ngModel)]="user.msg">
+     </div>
+
+     
+     <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+ </div>
