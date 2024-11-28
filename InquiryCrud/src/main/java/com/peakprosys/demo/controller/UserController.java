@@ -23,9 +23,9 @@ import com.peakprosys.demo.repository.UserRepository;
 
 @RestController
 @RequestMapping("/version1/")
-
+@CrossOrigin(origins = "http://localhost:4200")
 //conect to angular
-@CrossOrigin("*")
+//@CrossOrigin("*")
 public class UserController {
 	@Autowired
 	private UserRepository userRepository;
