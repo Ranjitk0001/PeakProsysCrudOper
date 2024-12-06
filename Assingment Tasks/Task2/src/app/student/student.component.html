@@ -1,1 +1,24 @@
 <p>student works!</p>
+<table class="table table-striped">
+    <thead class="table-header">
+    <tr>
+        
+        <th>sname</th>
+        <th>age</th>
+        <th>sclass</th>
+        
+      
+    </tr>
+</thead>
+<tbody>
+<tr *ngFor="let student of student">
+<!-- <tr > -->
+    <td>{{student.sname}}</td>
+    <td>{{student.age}}</td>
+    <td>{{student.sclass}}</td>
+    
+    
+</tr>
+
+</tbody>
+</table>
